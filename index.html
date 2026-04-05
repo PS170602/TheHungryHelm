@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Hungry Helm</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<!-- ══════════ TOPBAR ══════════ -->
+<nav class="topbar" id="topbar">
+  <a class="tb-logo" onclick="navigate('home')" style="cursor:pointer;text-decoration:none">
+    <svg class="tb-helm" width="26" height="26" viewBox="0 0 52 52" fill="none">
+      <circle cx="26" cy="26" r="6" stroke="#1a5f5a" stroke-width="2.2"/>
+      <circle cx="26" cy="26" r="15" stroke="rgba(26,95,90,0.3)" stroke-width="1.2"/>
+      <line x1="26" y1="11" x2="26" y2="4" stroke="#1a5f5a" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="26" y1="48" x2="26" y2="41" stroke="#1a5f5a" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="41" y1="26" x2="48" y2="26" stroke="#1a5f5a" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="4" y1="26" x2="11" y2="26" stroke="#1a5f5a" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="36.6" y1="15.4" x2="41.6" y2="10.4" stroke="#1a5f5a" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="10.4" y1="41.6" x2="15.4" y2="36.6" stroke="#1a5f5a" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="36.6" y1="36.6" x2="41.6" y2="41.6" stroke="#1a5f5a" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="10.4" y1="10.4" x2="15.4" y2="15.4" stroke="#1a5f5a" stroke-width="2.2" stroke-linecap="round"/>
+    </svg>
+    <div><div class="tb-name">The Hungry Helm</div><div class="tb-sub">Bennett University</div></div>
+  </a>
+  <div class="tb-right" id="tbRight">
+    <button class="tb-btn gold" onclick="navigate('login')">Log In</button>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════ LOGIN PAGE ══════════════════════════════════ -->
+<div id="loginPage" class="page active" style="display:grid">
+  <div class="login-left">
+    <div class="ll-texture"></div>
+    <div class="ll-content">
+      <div class="ll-eyebrow">Campus Food Navigation</div>
+      <h1 class="ll-title">Navigate<br>your <em>hunger.</em></h1>
+      <p class="ll-desc">Order from five campus food outlets, track in real-time, and never miss a meal between lectures at Bennett University.</p>
+      <div class="ll-helm">
+        <svg width="110" height="110" viewBox="0 0 110 110" fill="none">
+          <g class="helm-anim" style="transform-origin:55px 55px">
+            <circle cx="55" cy="55" r="12" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+            <circle cx="55" cy="55" r="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+            <circle cx="55" cy="55" r="34" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" stroke-dasharray="4 6"/>
+            <line x1="55" y1="43" x2="55" y2="14" stroke="rgba(255,255,255,0.7)" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="55" cy="12" r="5" fill="rgba(255,255,255,0.7)"/>
+            <line x1="55" y1="67" x2="55" y2="96" stroke="rgba(255,255,255,0.7)" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="55" cy="98" r="5" fill="rgba(255,255,255,0.7)"/>
+            <line x1="67" y1="55" x2="96" y2="55" stroke="rgba(255,255,255,0.7)" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="98" cy="55" r="5" fill="rgba(255,255,255,0.7)"/>
+            <line x1="43" y1="55" x2="14" y2="55" stroke="rgba(255,255,255,0.7)" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="12" cy="55" r="5" fill="rgba(255,255,255,0.7)"/>
+            <line x1="63.5" y1="46.5" x2="83.5" y2="26.5" stroke="rgba(255,255,255,0.7)" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="85" cy="25" r="5" fill="rgba(255,255,255,0.7)"/>
+            <line x1="46.5" y1="63.5" x2="26.5" y2="83.5" stroke="rgba(255,255,255,0.7)" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="25" cy="85" r="5" fill="rgba(255,255,255,0.7)"/>
+            <line x1="63.5" y1="63.5" x2="83.5" y2="83.5" stroke="rgba(255,255,255,0.7)" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="85" cy="85" r="5" fill="rgba(255,255,255,0.7)"/>
+            <line x1="46.5" y1="46.5" x2="26.5" y2="26.5" stroke="rgba(255,255,255,0.7)" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="25" cy="25" r="5" fill="rgba(255,255,255,0.7)"/>
+            <circle cx="55" cy="55" r="6" fill="rgba(255,255,255,0.8)"/>
+            <circle cx="55" cy="55" r="3" fill="#1a5f5a"/>
+          </g>
+        </svg>
+      </div>
+      <div class="ll-stats">
+        <div class="llstat"><div class="llstat-n">5</div><div class="llstat-l">Outlets</div></div>
+        <div class="llstat"><div class="llstat-n">120+</div><div class="llstat-l">Items</div></div>
+        <div class="llstat"><div class="llstat-n">~10m</div><div class="llstat-l">Avg wait</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="login-right">
+    <div class="lr-title">Welcome aboard</div>
+    <div class="lr-sub">Sign in to start your voyage</div>
+    <div class="login-tabs">
+      <div class="ltab on" onclick="switchLoginTab('student')">Student</div>
+      <div class="ltab" onclick="switchLoginTab('staff')">Staff</div>
+    </div>
+    <!-- STUDENT LOGIN -->
+    <div id="studentForm" class="lform">
+      <div class="lform-hint" style="margin-bottom:14px;text-align:center;color:var(--ink3)">
+        New here? <a href="#" onclick="switchLoginTab('studentReg'); return false" style="color:var(--teal);font-weight:600">Create an account</a>
+      </div>
+      <div class="lform-group"><label>College Email</label>
+        <input class="lform-input" id="sEmail" type="email" placeholder="yourname@bennett.edu.in" value="aryan.sharma@bennett.edu.in">
+        <div class="lform-hint">Only @bennett.edu.in addresses</div>
+      </div>
+      <div class="lform-group"><label>Password</label>
+        <input class="lform-input" id="sPass" type="password" placeholder="••••••••" value="password">
+      </div>
+      <button class="btn-submit btn-student" onclick="loginStudent()">Set Sail as Student →</button>
+    </div>
+    <!-- STUDENT REGISTER -->
+    <div id="studentRegForm" class="lform" style="display:none">
+      <div class="lform-hint" style="margin-bottom:14px;text-align:center;color:var(--ink3)">
+        Already have an account? <a href="#" onclick="switchLoginTab('student'); return false" style="color:var(--teal);font-weight:600">Log in</a>
+      </div>
+      <div class="lform-group"><label>Full Name</label>
+        <input class="lform-input" id="regSName" type="text" placeholder="Aryan Sharma">
+      </div>
+      <div class="lform-group"><label>College Email</label>
+        <input class="lform-input" id="regSEmail" type="email" placeholder="yourname@bennett.edu.in">
+        <div class="lform-hint">Only @bennett.edu.in addresses</div>
+      </div>
+      <div class="lform-group"><label>Enrollment Number</label>
+        <input class="lform-input" id="regSEnrollment" type="text" placeholder="E.g., BU-2024-001">
+      </div>
+      <div class="lform-group"><label>Phone Number</label>
+        <input class="lform-input" id="regSPhone" type="tel" placeholder="10-digit mobile number" maxlength="10">
+      </div>
+      <div class="lform-group"><label>Password</label>
+        <input class="lform-input" id="regSPass" type="password" placeholder="••••••••">
+      </div>
+      <div class="lform-group"><label>Confirm Password</label>
+        <input class="lform-input" id="regSPass2" type="password" placeholder="••••••••">
+      </div>
+      <button class="btn-submit btn-student" onclick="registerStudent()">Create Account →</button>
+    </div>
+    <!-- STAFF LOGIN -->
+    <div id="staffForm" class="lform" style="display:none">
+      <div class="lform-hint" style="margin-bottom:14px;text-align:center;color:var(--ink3)">
+        New staff? <a href="#" onclick="switchLoginTab('staffReg'); return false" style="color:var(--teal);font-weight:600">Register here</a>
+      </div>
+      <div class="lform-group"><label>Your Outlet</label>
+        <select class="lform-select" id="staffOutletSel">
+          <option value="ik">Infinity Kitchens</option>
+          <option value="hc">House of Chow</option>
+          <option value="ss">Southern Stories</option>
+          <option value="sn">Snapeats</option>
+          <option value="hs">Hotspot</option>
+        </select>
+      </div>
+      <div class="lform-group"><label>Staff ID</label>
+        <input class="lform-input" id="staffId" placeholder="IK-STAFF-001" value="IK-STAFF-001">
+      </div>
+      <div class="lform-group"><label>Password</label>
+        <input class="lform-input" id="staffPass" type="password" placeholder="••••••••" value="password">
+      </div>
+      <button class="btn-submit btn-staff" onclick="loginStaff()">Enter Staff Port →</button>
+    </div>
+    <!-- STAFF REGISTER -->
+    <div id="staffRegForm" class="lform" style="display:none">
+      <div class="lform-hint" style="margin-bottom:14px;text-align:center;color:var(--ink3)">
+        Already have an account? <a href="#" onclick="switchLoginTab('staff'); return false" style="color:var(--teal);font-weight:600">Log in</a>
+      </div>
+      <div class="lform-group"><label>Full Name</label>
+        <input class="lform-input" id="regStaffName" type="text" placeholder="John Doe">
+      </div>
+      <div class="lform-group"><label>Email</label>
+        <input class="lform-input" id="regStaffEmail" type="email" placeholder="john@example.com">
+      </div>
+      <div class="lform-group"><label>Assigned Outlet</label>
+        <select class="lform-select" id="regStaffOutletSel">
+          <option value="ik">Infinity Kitchens</option>
+          <option value="hc">House of Chow</option>
+          <option value="ss">Southern Stories</option>
+          <option value="sn">Snapeats</option>
+          <option value="hs">Hotspot</option>
+        </select>
+      </div>
+      <div class="lform-group"><label>Staff ID</label>
+        <input class="lform-input" id="regStaffId" type="text" placeholder="IK-STAFF-001">
+      </div>
+      <div class="lform-group"><label>Phone Number</label>
+        <input class="lform-input" id="regStaffPhone" type="tel" placeholder="10-digit mobile number" maxlength="10">
+      </div>
+      <div class="lform-group"><label>Password</label>
+        <input class="lform-input" id="regStaffPass" type="password" placeholder="••••••••">
+      </div>
+      <div class="lform-group"><label>Confirm Password</label>
+        <input class="lform-input" id="regStaffPass2" type="password" placeholder="••••••••">
+      </div>
+      <button class="btn-submit btn-staff" onclick="registerStaff()">Register Staff Account →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════ STUDENT HOME ══════════════════════════════════ -->
+<div id="homePage" class="page">
+  <div class="home-hero">
+    <div class="hh-grid">
+      <div>
+        <div class="hh-eyebrow" id="heroDate">Friday · 3 ports open</div>
+        <h2 class="hh-title">Good afternoon, <em id="heroName">Aryan.</em></h2>
+        <p class="hh-sub">Where are we navigating today?</p>
+        <div class="hh-stats">
+          <div class="hstat"><div class="hstat-n" id="heroActiveCount">0</div><div class="hstat-l">Active Orders</div></div>
+          <div class="hstat"><div class="hstat-n" id="heroSpent">₹0</div><div class="hstat-l">Spent Today</div></div>
+          <div class="hstat"><div class="hstat-n">3</div><div class="hstat-l">Open Ports</div></div>
+        </div>
+      </div>
+      <div class="hh-helm" id="heroHelmDiv">
+        <div class="hh-helm-ring"></div>
+        <svg class="hh-helm-svg" id="homeHelmSvg" viewBox="0 0 96 96" fill="none">
+          <g id="homeHelmG" style="transform-origin:48px 48px">
+            <circle cx="48" cy="48" r="11" stroke="rgba(255,255,255,0.45)" stroke-width="2"/>
+            <circle cx="48" cy="48" r="7.5" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.22)" stroke-width="1"/>
+            <circle cx="48" cy="48" r="29" stroke="rgba(255,255,255,0.1)" stroke-width="1.2" stroke-dasharray="3 5"/>
+            <line x1="48" y1="37" x2="48" y2="11" stroke="rgba(255,255,255,0.7)" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="48" cy="9" r="4" fill="rgba(255,255,255,0.7)"/>
+            <line x1="48" y1="59" x2="48" y2="85" stroke="rgba(255,255,255,0.7)" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="48" cy="87" r="4" fill="rgba(255,255,255,0.7)"/>
+            <line x1="59" y1="48" x2="85" y2="48" stroke="rgba(255,255,255,0.7)" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="87" cy="48" r="4" fill="rgba(255,255,255,0.7)"/>
+            <line x1="37" y1="48" x2="11" y2="48" stroke="rgba(255,255,255,0.7)" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="9" cy="48" r="4" fill="rgba(255,255,255,0.7)"/>
+            <line x1="55.5" y1="40.5" x2="72.5" y2="23.5" stroke="rgba(255,255,255,0.7)" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="74" cy="22" r="4" fill="rgba(255,255,255,0.7)"/>
+            <line x1="40.5" y1="55.5" x2="23.5" y2="72.5" stroke="rgba(255,255,255,0.7)" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="22" cy="74" r="4" fill="rgba(255,255,255,0.7)"/>
+            <line x1="55.5" y1="55.5" x2="72.5" y2="72.5" stroke="rgba(255,255,255,0.7)" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="74" cy="74" r="4" fill="rgba(255,255,255,0.7)"/>
+            <line x1="40.5" y1="40.5" x2="23.5" y2="23.5" stroke="rgba(255,255,255,0.7)" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="22" cy="22" r="4" fill="rgba(255,255,255,0.7)"/>
+            <circle cx="48" cy="48" r="5" fill="rgba(255,255,255,0.8)"/>
+            <circle cx="48" cy="48" r="2.5" fill="#1a5f5a"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="home-subnav">
+    <div class="snav-item on" onclick="switchHomeTab('ports')">Chart the Ports</div>
+    <div class="snav-item" onclick="switchHomeTab('orders')">My Orders</div>
+    <div class="snav-item" onclick="switchHomeTab('history')">Voyage Log</div>
+  </div>
+
+  <!-- PORTS TAB: THE NAUTICAL CHART -->
+  <div id="htab-ports" class="tab-section on">
+    <div style="margin-bottom:14px;display:flex;align-items:center;justify-content:space-between">
+      <div>
+        <div style="font-family:'Libre Baskerville',serif;font-size:20px;color:var(--ink);margin-bottom:3px">Nautical Chart</div>
+        <div style="font-size:12px;color:var(--ink4)">Select a port to view its menu and place an order</div>
+      </div>
+      <div style="font-size:11px;color:var(--ink4);background:var(--parchment);padding:6px 14px;border-radius:20px;border:1px solid var(--border)">Click any port marker to explore →</div>
+    </div>
+    <div class="chart-wrap" id="chartWrap">
+      <div class="chart-bg"></div>
+      <div class="chart-grid"></div>
+      <div class="chart-title">Bennett Campus Food Chart</div>
+      <div class="chart-rule"></div>
+
+      <!-- SVG routes between ports -->
+      <svg class="chart-route" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M 20 35 Q 38 20 52 28" stroke="rgba(26,95,90,0.12)" stroke-width="0.4" fill="none" stroke-dasharray="2 3"/>
+        <path d="M 52 28 Q 68 22 76 38" stroke="rgba(26,95,90,0.12)" stroke-width="0.4" fill="none" stroke-dasharray="2 3"/>
+        <path d="M 20 35 Q 22 58 30 72" stroke="rgba(26,95,90,0.12)" stroke-width="0.4" fill="none" stroke-dasharray="2 3"/>
+        <path d="M 30 72 Q 52 82 70 68" stroke="rgba(26,95,90,0.12)" stroke-width="0.4" fill="none" stroke-dasharray="2 3"/>
+        <path d="M 70 68 Q 78 55 76 38" stroke="rgba(26,95,90,0.12)" stroke-width="0.4" fill="none" stroke-dasharray="2 3"/>
+      </svg>
+
+      <!-- Compass rose -->
+      <svg class="chart-compass" viewBox="0 0 70 70" fill="none">
+        <circle cx="35" cy="35" r="32" stroke="rgba(28,24,18,.5)" stroke-width="1"/>
+        <line x1="35" y1="4" x2="35" y2="66" stroke="rgba(28,24,18,.4)" stroke-width="0.8"/>
+        <line x1="4" y1="35" x2="66" y2="35" stroke="rgba(28,24,18,.4)" stroke-width="0.8"/>
+        <text x="35" y="14" text-anchor="middle" font-size="8" fill="rgba(28,24,18,.6)" font-family="Libre Baskerville, serif" font-weight="700">N</text>
+        <text x="60" y="38" text-anchor="middle" font-size="7" fill="rgba(28,24,18,.5)" font-family="Libre Baskerville, serif">E</text>
+        <text x="35" y="62" text-anchor="middle" font-size="7" fill="rgba(28,24,18,.5)" font-family="Libre Baskerville, serif">S</text>
+        <text x="10" y="38" text-anchor="middle" font-size="7" fill="rgba(28,24,18,.5)" font-family="Libre Baskerville, serif">W</text>
+      </svg>
+
+      <!-- Port markers -->
+      <div class="chart-ports" id="chartPorts"></div>
+
+      <!-- Port drawer (slides in from right of chart) -->
+      <div class="port-drawer" id="portDrawer">
+        <div class="pd-header">
+          <div class="pd-icon" id="pdIcon"></div>
+          <div><div class="pd-name" id="pdName"></div><div class="pd-cuisine" id="pdCuisine"></div></div>
+          <button class="pd-close" onclick="closeDrawer()">✕</button>
+        </div>
+        <div class="pd-meta">
+          <div class="pdm-item">⏱ <span class="pdm-val" id="pdWait"></span></div>
+          <div class="pdm-item" id="pdStatusItem"></div>
+        </div>
+        <div class="pd-cats" id="pdCats"></div>
+        <div class="pd-items" id="pdItems"></div>
+        <div class="pd-footer">
+          <div class="pd-cart-row">
+            <span class="pd-cart-txt">Cart: <span id="drawerCart">empty</span></span>
+          </div>
+          <button class="btn-go-order" id="btnGoToOrder" onclick="goToOutletPage()" disabled>Browse Full Menu →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ORDERS TAB -->
+  <div id="htab-orders" class="tab-section">
+    <div id="homeOrdersList"></div>
+  </div>
+
+  <!-- HISTORY TAB -->
+  <div id="htab-history" class="tab-section">
+    <div id="homeHistoryList"></div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════ OUTLET PAGE ══════════════════════════════════ -->
+<div id="outletPage" class="page">
+  <div class="outlet-hero">
+    <button class="oh-back" onclick="navigate('home')">←</button>
+    <div class="oh-icon" id="ohIcon"></div>
+    <div>
+      <div class="oh-name" id="ohName"></div>
+      <div class="oh-cuisine" id="ohCuisine"></div>
+    </div>
+    <div class="oh-meta" id="ohMeta"></div>
+  </div>
+  <div class="outlet-body">
+    <div class="outlet-sidebar" id="outletSidebar"></div>
+    <div class="outlet-menu" id="outletMenu"></div>
+    <div class="cart-panel" id="cartPanel">
+      <div class="cp-header">
+        <div class="cp-title">Your Cart</div>
+      </div>
+      <div id="cartItemsEl"></div>
+      <div class="cp-footer" id="cartFooter" style="display:none">
+        <div class="cp-total-row">
+          <span>Total</span>
+          <span class="cp-total-amt" id="cartTotal">₹0</span>
+        </div>
+        <button class="btn-checkout" id="btnCheckout" onclick="openOrderConfirm()">Checkout →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════ ORDERS PAGE ══════════════════════════════════ -->
+<div id="ordersPage" class="page">
+  <div class="orders-hero">
+    <div style="display:flex;align-items:center;gap:14px">
+      <button style="width:36px;height:36px;border-radius:50%;border:1.5px solid rgba(255,255,255,.3);background:transparent;color:#fff;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center" onclick="navigate('home')">←</button>
+      <div>
+        <h1 class="orders-hero h1" style="font-family:'Libre Baskerville',serif;font-size:28px;font-weight:400;color:#fff">My Orders</h1>
+        <p style="font-size:13px;color:rgba(255,255,255,.6);margin-top:3px">Track your current voyage</p>
+      </div>
+    </div>
+  </div>
+  <div class="orders-body">
+    <div class="ord-section-title">Active <div class="ost-divider"></div></div>
+    <div id="ordersActiveList"></div>
+    <div class="ord-section-title" style="margin-top:28px">Completed <div class="ost-divider"></div></div>
+    <div id="ordersCompletedList">
+      <div class="order-card2">
+        <div class="oc2-top">
+          <div class="oc2-ref">#039</div>
+          <div class="oc2-outlet">Southern Stories</div>
+          <div class="oc2-time">Yesterday 1:15 PM</div>
+          <div class="oc2-badge oc2b-done">Done</div>
+        </div>
+        <div class="oc2-name">Masala Dosa</div>
+        <div class="oc2-items">1 item · ₹70</div>
+        <div class="oc2-track">
+          <div class="otrack done"><div class="otdot"></div><div class="otlbl">Received</div></div>
+          <div class="otrack done"><div class="otdot"></div><div class="otlbl">Preparing</div></div>
+          <div class="otrack done"><div class="otdot"></div><div class="otlbl">Ready</div></div>
+          <div class="otrack done"><div class="otdot"></div><div class="otlbl">Done</div></div>
+        </div>
+        <div class="oc2-total">₹70</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════ STAFF PAGE ══════════════════════════════════ -->
+<div id="staffPage" class="page">
+  <div class="staff-banner">
+    <div>
+      <div class="sb-title" id="sbTitle">Infinity Kitchens</div>
+      <div class="sb-outlet">Staff Dashboard · Live Operations</div>
+    </div>
+    <div class="sb-toggle-wrap">
+      <span class="sb-toggle-lbl">Port Status:</span>
+      <label class="toggle-sw">
+        <input type="checkbox" id="outletToggle" checked onchange="toggleOutletStatus(this)">
+        <div class="toggle-track"></div>
+      </label>
+      <span class="tb-pill tp-online" id="portStatusPill">OPEN</span>
+    </div>
+  </div>
+  <div class="staff-tabs-bar">
+    <div class="staff-tab on" onclick="switchStaffTab('orders')">Live Orders</div>
+    <div class="staff-tab" onclick="switchStaffTab('menu')">Menu Manifest</div>
+    <div class="staff-tab" onclick="switchStaffTab('reports')">Reports</div>
+  </div>
+  <div class="staff-main">
+    <!-- ORDERS -->
+    <div id="stc-orders" class="staff-tab-content on">
+      <div class="stat-row">
+        <div class="scard sc-g"><div class="scard-lbl">Incoming</div><div class="scard-num" id="sc-inc">2</div><div class="scard-sub">awaiting accept</div></div>
+        <div class="scard sc-b"><div class="scard-lbl">Preparing</div><div class="scard-num" id="sc-prep">2</div><div class="scard-sub">in the galley</div></div>
+        <div class="scard sc-t"><div class="scard-lbl">Ready</div><div class="scard-num" id="sc-ready">1</div><div class="scard-sub">pickup pending</div></div>
+        <div class="scard sc-a"><div class="scard-lbl">Today</div><div class="scard-num" id="sc-done">47</div><div class="scard-sub">completed orders</div></div>
+      </div>
+      <div class="sdiv">Incoming Queue</div>
+      <div class="tickets-row" id="staffIncoming"></div>
+      <div class="sdiv" style="margin-top:20px">In Progress</div>
+      <div id="staffInProgress"></div>
+    </div>
+    <!-- MENU -->
+    <div id="stc-menu" class="staff-tab-content">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+        <div class="sdiv" style="flex:1;margin-bottom:0">Menu Manifest</div>
+        <button style="padding:9px 18px;background:var(--teal);color:#fff;border-radius:8px;font-size:12px;font-weight:600;border:none;margin-left:16px;transition:all .18s" onmouseenter="this.style.background=vars['--teal2']" onmouseleave="this.style.background=vars['--teal']" onclick="openAddModal()">+ Add Item</button>
+      </div>
+      <div id="staffMenuTable"></div>
+    </div>
+    <!-- REPORTS -->
+    <div id="stc-reports" class="staff-tab-content">
+      <div class="stat-row">
+        <div class="scard sc-g"><div class="scard-lbl">Revenue</div><div class="scard-num">₹8,240</div><div class="scard-sub">+12% vs yesterday</div></div>
+        <div class="scard sc-a"><div class="scard-lbl">Orders</div><div class="scard-num">47</div><div class="scard-sub">avg ₹175 / order</div></div>
+        <div class="scard sc-t"><div class="scard-lbl">Avg Wait</div><div class="scard-num">14m</div><div class="scard-sub">target &lt;18m</div></div>
+        <div class="scard sc-b"><div class="scard-lbl">Rating</div><div class="scard-num">4.6</div><div class="scard-sub">23 reviews today</div></div>
+      </div>
+      <div class="report-2col">
+        <div>
+          <div class="sdiv">Top Items</div>
+          <div class="rpt-table">
+            <div class="rpt-hdr" style="grid-template-columns:1fr 60px 80px"><div>Item</div><div>Orders</div><div>Revenue</div></div>
+            <div class="rpt-row" style="grid-template-columns:1fr 60px 80px"><div><div class="rrt-name">Butter Chicken</div><div class="rrt-cat">Mains</div></div><div class="rrt-num">18</div><div class="rrt-rev">₹2,700</div></div>
+            <div class="rpt-row" style="grid-template-columns:1fr 60px 80px"><div><div class="rrt-name">Chicken Biryani</div><div class="rrt-cat">Rice</div></div><div class="rrt-num">12</div><div class="rrt-rev">₹2,100</div></div>
+            <div class="rpt-row" style="grid-template-columns:1fr 60px 80px"><div><div class="rrt-name">Dal Makhani</div><div class="rrt-cat">Mains</div></div><div class="rrt-num">10</div><div class="rrt-rev">₹1,100</div></div>
+            <div class="rpt-row" style="grid-template-columns:1fr 60px 80px"><div><div class="rrt-name">Masala Chai</div><div class="rrt-cat">Drinks</div></div><div class="rrt-num">32</div><div class="rrt-rev">₹640</div></div>
+          </div>
+        </div>
+        <div>
+          <div class="sdiv">Peak Hours</div>
+          <div class="rpt-table">
+            <div class="rpt-hdr" style="grid-template-columns:70px 1fr 70px"><div>Hour</div><div>Volume</div><div>Revenue</div></div>
+            <div class="rpt-row" style="grid-template-columns:70px 1fr 70px"><div style="font-size:12px">12 PM</div><div><div class="bar-chart-row"><div class="bar-fill" style="width:90%"></div></div></div><div class="rrt-rev">₹2,100</div></div>
+            <div class="rpt-row" style="grid-template-columns:70px 1fr 70px"><div style="font-size:12px">1 PM</div><div><div class="bar-chart-row"><div class="bar-fill" style="width:75%"></div></div></div><div class="rrt-rev">₹1,750</div></div>
+            <div class="rpt-row" style="grid-template-columns:70px 1fr 70px"><div style="font-size:12px">2 PM</div><div><div class="bar-chart-row"><div class="bar-fill" style="width:55%"></div></div></div><div class="rrt-rev">₹1,280</div></div>
+            <div class="rpt-row" style="grid-template-columns:70px 1fr 70px"><div style="font-size:12px">4 PM</div><div><div class="bar-chart-row"><div class="bar-fill" style="width:38%"></div></div></div><div class="rrt-rev">₹880</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ADD ITEM MODAL -->
+<div class="modal-ov" id="addItemModal">
+  <div class="modal-box">
+    <div class="modal-title">Add Menu Item <button class="modal-close" onclick="closeModal('addItemModal')">✕</button></div>
+    <div class="modal-form">
+      <div class="lform-group"><label>Item Name</label><input class="lform-input" id="newName" placeholder="e.g. Butter Chicken"></div>
+      <div class="mf-row">
+        <div class="lform-group"><label>Category</label>
+          <select class="lform-select" id="newCat"><option>Mains</option><option>Rice</option><option>Breads</option><option>Noodles</option><option>Dosas</option><option>Snacks</option><option>Drinks</option></select>
+        </div>
+        <div class="lform-group"><label>Price ₹</label><input class="lform-input" type="number" id="newPrice" placeholder="150"></div>
+      </div>
+      <div class="lform-group"><label>Description</label><input class="lform-input" id="newDesc" placeholder="Brief description…"></div>
+      <div class="mf-row">
+        <div class="lform-group"><label>Type</label>
+          <select class="lform-select" id="newType"><option value="veg">Vegetarian</option><option value="nonveg">Non-Veg</option></select>
+        </div>
+        <div class="lform-group"><label>Availability</label>
+          <select class="lform-select" id="newStock"><option value="1">In Stock</option><option value="0">Out of Stock</option></select>
+        </div>
+      </div>
+      <div class="mf-btns">
+        <button class="btn-cancel" onclick="closeModal('addItemModal')">Cancel</button>
+        <button class="btn-save" onclick="addMenuItem()">Add to Manifest</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ORDER CONFIRM MODAL -->
+<div class="modal-ov" id="confirmModal">
+  <div class="modal-box">
+    <div class="modal-title">Confirm Order <button class="modal-close" onclick="closeModal('confirmModal')">✕</button></div>
+    <div id="confirmItems" class="confirm-items"></div>
+    <div id="confirmTotal" class="confirm-total-row" style="display:flex;justify-content:space-between;font-size:14px;font-weight:700;margin-bottom:18px"></div>
+    <div class="mf-btns">
+      <button class="btn-cancel" onclick="closeModal('confirmModal')">Cancel</button>
+      <button class="btn-save" onclick="confirmOrder()">Place Order ⚓</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
